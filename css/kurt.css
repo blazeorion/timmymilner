@@ -1,0 +1,1044 @@
+html, body {
+  height:100%;
+  margin:0 auto;
+}
+
+body {
+  padding: 0px;
+  color: #000;
+  font-size: 18px;
+  font-family: 'toxicaregular';
+  font-weight: 300;
+  font-style: normal;
+}
+
+#blurred-image-container {
+    display:block;
+    padding:0;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+.video_background {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-color: black; /* in case the video doesn't fit the whole page*/
+    background-image: /* our video */;
+    background-position: center center;
+    background-size: contain;
+    object-fit: cover; /*cover video background */
+    z-index:0;
+    display: block;
+}
+
+.background1 {
+  background: url(../img/mtns2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  position: fixed;
+}
+
+.background2 {
+  background: url(../img/mtns2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  opacity: 0;
+  position: fixed;
+}
+
+.thanks {
+  background: url(../img/mtns2.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.thanks h3 {
+  text-align: center;
+}
+
+.thanks a {
+  color:#000;
+}
+
+#content {
+  overflow: scroll;
+}
+
+.header-inner {
+    position: fixed;
+    pointer-events: none;
+    top: 50%;
+    width: 90%;
+    left:50%;
+    margin-left:-45%;
+    -webkit-transform: translate3d(0,-50%,0);
+    -moz-transform: translate3d(0,-50%,0);
+    -ms-transform: translate3d(0,-50%,0);
+    transform: translate3d(0,-50%,0);
+    z-index: 3;
+}
+
+.mobile-header {
+  display: none;
+}
+.mobile-preorder {
+  display: none;
+}
+
+.logo {
+    opacity: 0;
+    display: none;
+    width: 95%;
+    -webkit-transform-origin: 53% 0;
+    -moz-transform-origin: 53% 0;
+    -ms-transform-origin: 53% 0;
+    transform-origin: 53% 0;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    transition: opacity .1s ease .1s;
+}
+
+.index .logo {
+  display: inline-block;
+  margin-left:5px;
+}
+
+.title {
+  width: 350px;
+  height: 156px;
+  background: url(../img/kurti-vile.png);
+  background-size: 350px 156px;
+  display: inline-block;
+  float: left;
+}
+
+
+.packshot {
+  position: relative;
+  width: 40%;
+  left:10%;
+}
+
+table {
+  width: 75%;
+  left: 10%;
+  top: 20%;
+  margin: 0 auto;
+  border-top: 1px solid #fff;
+  border-collapse: collapse;
+}
+
+table tr:hover {
+  background:rgba(250,250,250,.15);
+}
+
+table td {
+  vertical-align: bottom;
+  text-align: left;
+  padding: 10px 10px 10px 0;
+  max-width: 40%;
+  border-bottom: 1px solid #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-left:5px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+}
+
+table a {
+  color: #fff;
+}
+
+table tr.footer td {
+  border-bottom: none;
+  background: none;
+  text-align: left;
+}
+
+table tr.footer td img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+#main {
+  width: 100%;
+  height:100%;
+  display: table;
+  overflow: hidden;
+  text-align: center;
+}
+
+.img-wrap {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.img-wrap img {
+  width: 70%;
+  height: auto;
+}
+
+.item {
+  display: inline-block;
+  margin:0px 8px;
+  color:#000;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-left .item {
+  margin: 0px 15px;
+}
+
+.bundles {
+  color:#000;
+  font-size: 15px;
+  text-align: center;
+}
+
+#stream {
+  width: 74%;
+  position: absolute;
+  top:215%;
+  margin:0 auto;
+  text-align: center;
+  left:50%;
+  margin-left:-37%;
+  padding-top:100px;
+  margin-top:-100px;
+  z-index: 1;
+}
+
+#video {
+  width: 74%;
+  position: absolute;
+  top:240%;
+  margin:0 auto;
+  text-align: center;
+  left:50%;
+  margin-left:-37%;
+  padding-top:100px;
+  margin-top:-100px;
+}
+
+#top {
+  height: 100%;
+  position: relative;
+}
+
+#preorder {
+  position: absolute;
+  width: 100%;
+  top:150%;
+}
+
+#scroll-to {
+  position: absolute;
+  top:90%;
+}
+
+.wrapper {
+  width:100%;
+  position:fixed;
+  z-index:3;
+  height:100px;
+  top:-1px;
+  opacity: 0;
+  background: url(../img/mtns24.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: auto;
+}
+
+.bottom-wrapper {
+  width:100%;
+  z-index:5;
+  overflow:auto;
+}
+
+.menu {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  color:#000;
+  top:30px;
+  opacity: 0;
+  z-index: 5;
+}
+
+.mobile-menu {
+  display: none;
+  margin: auto;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-bottom:10px;
+}
+
+.mobile-menu a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 7px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 18px;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.mobile-menu a:hover {
+  opacity: .5;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+#mobile-nav {
+  display: none;
+}
+
+.menu a {
+  text-decoration: none;
+  opacity: 1;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.menu a:hover {
+  opacity: .5;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+.menu-left {
+  left:50%;
+  margin-left:-520px;
+}
+
+.menu-right {
+  left:50%;
+  margin-left:95px;
+}
+
+#cover img {
+  width: 500px;
+  height:500px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,.13);
+}
+
+#cover {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-left:-510px;
+  top: 50%;
+  margin-top: -280px;
+}
+
+#tracklist {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  top: -20px;
+  top: 50%;
+  margin-top: -280px;
+  left: 50%;
+  margin-left: 10px;
+  width: 500px;
+  height: 500px;
+}
+
+#title-text {
+  background: url(../img/blieve-title.png);
+  width: 350px;
+  height:75px;
+  background-size: 100%;
+  position: relative;
+  margin:auto;
+  margin-top:-10px;
+}
+
+#tracklist h3 {
+  text-align: center;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+
+.order-btns {
+  text-align: center;
+  margin: 0 auto;
+  left: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.order-btns.row1 {
+  margin-left: -305px;
+  margin-top: 247px;
+}
+
+.order-btns.row2 {
+  margin-left: -300px;
+  margin-top: 310px;
+}
+
+.order-btns h4 {
+  margin:0;
+}
+
+.order-btns a {
+  color:#000;
+  text-decoration: none;
+  z-index: 2;
+  padding: 8px 13px;
+  border: 2px solid #000;
+  margin: 11px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.order-btns.row2 a {
+  font-size: 16px;
+}
+
+.order-btns a:hover {
+  background: rgba(250,250,250,.3);
+}
+
+#tracklist p {
+  margin:12px 20px;
+}
+
+.packshot {
+  position: relative;
+  width: 40%;
+  left:10%;
+}
+
+.tour-title {
+  left: 13%;
+  position: relative;
+  display: inline-block;
+  text-shadow:1px 1px 1px rgba(0,0,0,.2);
+}
+
+.old-cover {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  margin-left: -370px;
+  top: 50%;
+  margin-top: -200px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+}
+
+#signup {
+  position: absolute;
+  top: 343%;
+  border: 2px solid #000;
+  text-align: center;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px 20px;
+} 
+
+.input {
+  display: inline-block;
+}
+
+.entry {
+  background: transparent;
+  border:2px solid #000;
+  color:#000;
+  font-family: 'toxicaregular';
+  font-size: 16px;
+  padding: 3px 4px;
+  border-radius: 0px;
+}
+
+::-webkit-input-placeholder {
+   color: #fff;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+}
+
+:-ms-input-placeholder {
+   color: #fff;
+}
+
+#submit-btn {
+  color:#62605b;
+  background: #000;
+  border:none;
+  font-family: 'toxicaregular';
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px 7px;
+  border-radius: 0px;
+}
+
+.entry:focus {outline:0;}
+
+#submit-btn:focus {outline:0;}
+
+#signup-header {
+  font-size: 24px;
+}
+
+#live {
+  width: 80%;
+  margin:auto;
+  max-width: 1000px;
+  padding-top:110px;
+  padding-bottom:50px;
+  margin-top:100px;
+  position: absolute;
+  top:370%;
+  left:50%;
+  margin-left:-40%;
+}
+
+.tour-title2 {
+  margin-left:1%;
+  position: absolute;
+  display: inline-block;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+  text-align: left;
+  padding-bottom: 10px;
+  margin-top: 0px;
+}
+
+.top {
+  position: absolute;
+  z-index: 4;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+.bit-header {
+  display: none !important;
+}
+
+.bit-track-artist-header {
+  display: none !important;
+}
+
+#bit-widget-0 {
+  margin-top:40px;
+  margin-bottom: 100px;
+}
+
+.bit-rsvp {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  #video {
+    width: 1000px;
+    margin-left:-500px;
+  }
+  #live {
+    width: 1000px;
+    margin-left:-500px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #cover img {
+    width: 400px;
+    height:400px;
+  }
+  #cover {
+    margin-left:-420px;
+  }
+  #tracklist {
+    margin-left:0px;
+    width: 430px;
+    height: auto;
+  }
+  #tracklist p {
+    margin: 8px 20px;
+    font-size: 16px
+  }
+  #tracklist h3 {
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+  .order-btns.row1 {
+    margin-top: 150px;
+  }
+  .order-btns.row2 {
+    margin-top: 210px;
+  }
+  #stream {
+    top:200%;
+  }
+  #live {
+    top:305%;
+  }
+  #signup {
+    top: 290%;
+  }
+  #video {
+    top: 208%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .item {
+    margin:0px 4px;
+    font-size: 16px;
+  }
+  .menu-left .item {
+    margin:0px 6px;
+  }
+  .menu-right {
+    margin-left:92px;
+  }
+  .menu-left {
+    margin-left: -440px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #video {
+    width: 76%;
+    margin-left:-38%;
+  }
+  #cover {
+    width: 90%;
+    margin-left: -45%;
+  }
+  #cover img {
+    width: 100%;
+    height: auto;
+  }
+  #tracklist {
+    width: 90%;
+    margin-left: -45%;
+  }
+  .order-btns {
+    margin: 10px auto 0px -160px;
+  }
+  #live {
+    width: 94%;
+    margin-left: -47%;
+  }
+  #preorder {
+    margin-top:40%
+  }
+  .tour-title2 {
+    margin-left:5%;
+  }
+  #stream iframe {
+    -webkit-transform:scale(.9);
+    -moz-transform:scale(.9);
+    transform:scale(.9);
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .tour-title2 {
+    position: relative;
+  }
+  #bit-widget-0 {
+    margin-top:0px;
+  }
+  #cover {
+    margin-left:-200px;
+    display: block;
+    position: relative;
+    width: 400px;
+  }
+  #tracklist {
+    position: relative;
+    display: block;
+    margin-left: -225px;
+    margin-top: 20px;
+  }
+  .order-btns {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    margin: 0px;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    left: 50%;
+    margin:0 auto;
+    margin-left: -160px;
+  }
+  .order-btns h4 {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+    position: fixed;
+    top:20px;
+    right:20px;
+    font-size: 20px;
+    z-index: 2;
+  }
+  .order-btns {
+    display: block;
+    width: 76%;
+    left:0;
+    margin-left:0;
+  }
+  .order-btns.row1 {
+    margin-top: 75px;
+    margin-left:0;
+    margin:auto;
+    margin-top: 30px;
+  }
+  .order-btns.row2 {
+    margin-top:0px;
+    margin-left:0px;
+    margin:auto;
+  }
+  #video {
+    top: 262%;
+  }
+
+  html, body {
+    background: url(../img/mtns2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .header-inner {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    position: relative;
+    top: 7px;
+    width: 100%;
+    transform:none;
+    -webkit-transform:none;
+    -moz-transform:none;
+  }
+  .mobile-header img {
+    width: 100%;
+  }
+  .wrapper {
+    display: none;
+  }
+  .mobile-preorder {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin:auto;
+    max-width: 600px;
+  }
+  .mobile-preorder a:hover {
+    background: rgba(250,250,250,.3);
+  }
+  .mobile-preorder a {
+    display: inline-block;
+    color:#000;
+    text-decoration: none;
+    border:2px solid #000;
+    padding:5px 10px;
+    margin:10px 0px;
+  }
+  .bottom-wrapper {
+    overflow: initial;
+    margin-top: 0px;
+  }
+  .top {
+    display: none;
+  }
+  #preorder {
+    position: relative;
+    margin-top: 320px;
+  }
+  #tracklist {
+    display: none;
+  }
+  .order-btns {
+    display: none;
+  }
+  #cover {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    left:0;
+    display: none;
+  }
+  #cover img {
+    width: 100%;
+    height: auto;
+  }
+  #preorder {
+    margin-top:50px;
+  }
+  #video {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 0px;
+  }
+  #live {
+    position: relative;
+    padding-top:20px;
+    margin-top: 50px;
+  }
+  #signup {
+    width: 350px;
+    margin-left:-175px;
+    position: relative;
+    margin-top:50px;
+    padding:0px;
+    border:none;
+  }
+  #stream {
+    width: 350px;
+    margin-left:-168px;
+    position: relative;
+    margin-top:100px;
+    padding:0px;
+    border:none;
+    top:25px;
+  }
+}
+
+@media screen and (max-height: 560px) {
+  #cover {
+    margin-left:-200px;
+    display: block;
+    position: relative;
+    width: 400px;
+  }
+  #tracklist {
+    position: relative;
+    display: block;
+    margin-left: -225px;
+    margin-top: 20px;
+  }
+  .order-btns {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px;
+    margin: 0px;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    left: 50%;
+    margin:0 auto;
+    margin-left: -160px;
+  }
+  .order-btns h4 {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+    position: fixed;
+    top:20px;
+    right:20px;
+    font-size: 20px;
+    z-index: 2;
+  }
+  .order-btns {
+    display: block;
+    width: 76%;
+    left:0;
+    margin-left:0;
+  }
+  .order-btns.row1 {
+    margin-top: 75px;
+    margin-left:0;
+    margin:auto;
+    margin-top: 30px;
+  }
+  .order-btns.row2 {
+    margin-top:0px;
+    margin-left:0px;
+    margin:auto;
+  }
+  #video {
+    top: 262%;
+  }
+
+  html, body {
+    background: url(../img/mtns2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .header-inner {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    position: relative;
+    top: 7px;
+    width: 100%;
+    transform:none;
+    -webkit-transform:none;
+    -moz-transform:none;
+  }
+  .mobile-header img {
+    width: 100%;
+  }
+  .wrapper {
+    display: none;
+  }
+  .mobile-preorder {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin:auto;
+    max-width: 600px;
+  }
+  .mobile-preorder a:hover {
+    background: rgba(250,250,250,.3);
+  }
+  .mobile-preorder a {
+    display: inline-block;
+    color:#000;
+    text-decoration: none;
+    border:2px solid #000;
+    padding:5px 10px;
+    margin:10px 0px;
+  }
+  .bottom-wrapper {
+    overflow: initial;
+    margin-top: 0px;
+  }
+  .top {
+    display: none;
+  }
+  #preorder {
+    position: relative;
+    margin-top: 320px;
+  }
+  #tracklist {
+    display: none;
+  }
+  .order-btns {
+    display: none;
+  }
+  #cover {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    left:0;
+    display: none;
+  }
+  #cover img {
+    width: 100%;
+    height: auto;
+  }
+  #preorder {
+    margin-top:50px;
+  }
+  #video {
+    position: relative;
+    margin-top: 50px;
+    padding-top: 0px;
+  }
+  #live {
+    position: relative;
+    padding-top:0px;
+    margin-top: 50px;
+  }
+  #signup {
+    width: 350px;
+    margin-left:-175px;
+    position: relative;
+    margin-top:50px;
+    padding:0px;
+    border:none;
+  }
+  #stream {
+    width: 350px;
+    margin-left:-168px;
+    position: relative;
+    margin-top:100px;
+    padding:0px;
+    border:none;
+    top:25px;
+  }
+}
+
+@media screen and (max-device-width: 600px) {
+  html {
+    background: url(../img/mtns2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    overflow: hidden;
+  }
+  body {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .background1 {
+    display: none;
+  }
+  .background2 {
+    display: none;
+  }
+}
